@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulario de Método de Pago</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="return-button">Volver</a>
+<div class="container">
+    <h2>Ingrese los Datos de su Método de Pago</h2>
+    <form id="paymentForm" onsubmit="mostrarMensaje()">
+        <label for="nombre">Nombre en la Tarjeta:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="numero">Número de Tarjeta:</label>
+        <input type="text" id="numero" name="numero" maxlength="18" required>
+
+        <label for="fecha">Fecha de Vencimiento:</label>
+        <input type="text" id="fecha" name="fecha" placeholder="MM/AA" maxlength="4" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" maxlength="3" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+<script>
+    function mostrarMensaje() {
+        alert("Pago realizado con éxito");
+    }
+</script>
+
+</body>
+</html>

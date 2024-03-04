@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="imagen/png" sizes="192x192" href="imagen/shoes.png">
+    <title>SHOES BOUTIQUE</title>
+</head>
+<body background="imagen/R.jfif" class="logo">
+
+<img src="imagen/shoes.png" >
+<h6 class="logo" >SHOES boutique</h6>
+  <section>
+  </body>
+    <body>
+      <div class="navbar">
+        <nav class="menu"> 
+        <input type="checkbox" name="" id="menu"  >
+        <label for="menu" >
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </label> 
+        <ul>
+     <li><a href="index.html">Inicio</a></li>      
+       <li><a href="#">Nosotros</a>
+        <ul>
+          <li><a href="mision.html">Mision</a> </li>
+          <li><a href="vision.html">Vision</a> </li>
+          <li><a href="conocenos.html">Conocenos</a> </li>
+        </ul>
+        </li>
+        <li><a href="#">Productos</a>
+          <ul>
+            <li><a href="dama.html">Dama</a> </li>
+            <li><a href="caballero.html">Caballero</a> </li>
+            <li><a href="niños.html">Niños(as)</a> </li>
+          </ul>
+          </li>
+      <li><a href="sesion.html">Unete al equipo</a></li>
+     </ul> 
+    </nav>
+    </div>
+    <br>
+    <style> 
+      @keyframes move {
+          0% { transform: translateX(0); }
+          50% { transform: translateX(20px); }
+          100% { transform: translateX(0); }
+      }
+
+      h1 {
+          animation: move 2s infinite;
+      }
+  </style>
+    <h1>PARA DAMAS</h1>
+    
+    <br>
+    <div class="Caja"></div>
+    <div class="caja_info1">
+      <p class="titulo_producto">Huaraches</p>
+      <img class="imagen_producto" src="imagen/huarache.webp" height="200" width="200">
+      <h2 class="precio_producto">$250.00 MXN</h2>
+      <button onclick="mostrarMensaje()" class="agregar">Agregar al carrito</button>
+    <br>
+    <a href="compra.html"><button  class="comprar">Comprar</button></a>
+  </div>
+  
+  <div class="caja_info1">
+    <p class="titulo_producto">Zapato Deportivo</p>
+    <img class="imagen_producto" src="imagen/casualm.webp" height="200" width="200">
+    <h2 class="precio_producto">$450.00 MXN</h2>
+    <button onclick="mostrarMensaje()" class="agregar">Agregar al carrito</button>
+    <br>
+    <a href="compra.html"><button  class="comprar">Comprar</button></a>
+  </div>
+
+  <div class="caja_info1">
+    <p class="titulo_producto">Zapatillas</p>
+    <img class="imagen_producto" src="imagen/5.jpg" height="200" width="200">
+    <h2 class="precio_producto">$450.00 MXN</h2>
+    <button onclick="mostrarMensaje()" class="agregar">Agregar al carrito</button>
+    <br>
+    <a href="compra.html"><button  class="comprar">Comprar</button></a>
+  </div>
+
+  
+  <div class="caja_info1">
+    <p class="titulo_producto">Zapato Casual</p>
+    <img class="imagen_producto" src="imagen/simple.jpg" height="200" width="200">
+    <h2 class="precio_producto">$400.00 MXN</h2>
+    <button onclick="mostrarMensaje()" class="agregar">Agregar al carrito</button>
+    <br>
+    <a href="compra.html"><button  class="comprar">Comprar</button></a>
+  </div>
+  
+  <div class="caja_info1">
+    <p class="titulo_producto">Zapatillas </p>
+    <img class="imagen_producto" src="imagen/7.jpg" height="200" width="200">
+    <h2 class="precio_producto">$300.00 MXN</h2>
+    <button onclick="mostrarMensaje()" class="agregar">Agregar al carrito</button>
+    <br>
+    <a href="compra.html"><button  class="comprar">Comprar</button></a>
+  </div>
+  
+  <div class="caja_info1">
+    <p class="titulo_producto">Huaraches</p>
+    <img class="imagen_producto" src="imagen/huarache2.jpg" height="200" width="200">
+    <h2 class="precio_producto">$310.00 MXN</h2>
+    <button onclick="mostrarMensaje()" class="agregar">Agregar al carrito</button>
+    <br>
+    <a href="compra.html"><button  class="comprar">Comprar</button></a>
+  </div>
+  <!-- Ventana emergente -->
+<div id="mensaje" class="mensaje">
+  Agregado con éxito
+</div>
+
+<script>
+  // Función para mostrar el mensaje
+  function mostrarMensaje() {
+      var mensaje = document.getElementById('mensaje');
+      mensaje.style.display = 'block';
+      setTimeout(function() {
+          mensaje.style.display = 'none';
+      }, 2000); // Ocultar el mensaje después de 2 segundos
+  }
+</script>
+
+   
+      
+  </section>
+  
+    <footer class="social-icons-footer">  
+      
+        <!-- Lista de iconos de redes sociales con enlaces -->
+        <a href="tel:+524811500708" target="_blank"><img src="imagen/llamada.png" alt="LLamada">
+        <a href="sms:+524811500708?body=Quiero%20mas%20informacion%20de%20los%20productos." target="_blank"><img src="imagen/sms.png" alt="SMS"></a>
+        <a href="https://www.google.com/maps/place/21%C2%B058'26.3%22N+98%C2%B058'34.8%22W/@21.9739691,-98.9789104,17z/data=!3m1!4b1!4m4!3m3!8m2!3d21.9739691!4d-98.9763355?hl=es&entry=ttu" target="_blank"><img src="imagen/ubi.png" alt="Ubicacion"></a>
+        <a href="https://www.facebook.com/profile.php?id=61557022046036" target="_blank"><img src="imagen/facebook.png" alt="Facebook"></a>
+        <a href="https://api.whatsapp.com/send?phone=4811500708&text=Hola%20quiero%20más%20información%20de%20los%20productos" target="_blank"><img src="imagen/whatsapp.png" alt="whatsapp"></a>
+        <a href="https://www.instagram.com/shoesboutique529/" target="_blank"><img src="imagen/instagram.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@shoesboutique5?lang=es" target="_blank"><img src="imagen/tik-tok.png" alt="Tik tok"></a>
+        <!-- Agrega más enlaces e imágenes según sea necesario -->
+
+    </footer>
+  </body>
+</html>
